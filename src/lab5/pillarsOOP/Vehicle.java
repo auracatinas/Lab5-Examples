@@ -10,7 +10,7 @@ public class Vehicle {
         System.out.println("Vehicle moves");
     }
 
-    public void start() {
+    public final void start() {
         System.out.println("Vehicle starts!");
     }
 
@@ -27,5 +27,10 @@ class Car extends Vehicle {
         System.out.println("Car moves");
         super.moves();
         super.start();
+    }
+
+    @Override
+    public void start() {
+        System.out.println("vehicle starts");
     }
 }
