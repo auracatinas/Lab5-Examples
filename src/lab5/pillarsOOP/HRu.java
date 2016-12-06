@@ -9,6 +9,6 @@ public class HRu {
         Person p = new Person();
         System.out.println(p.getCNP());
         System.out.println(p.talk());
-        System.out.println(p.CNP);
+//        System.out.println(p.CNP);
     }
 }
