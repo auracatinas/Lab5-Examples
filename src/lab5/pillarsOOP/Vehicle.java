@@ -1,7 +1,5 @@
 package lab5.pillarsOOP;
 
-import javafx.geometry.Pos;
-
 /**
  * @author flo
  * @since 06/12/2016.
@@ -34,7 +32,13 @@ public abstract class Vehicle implements Movable {
         car.moves();
         Movable movable = car;
         Vehicle v = car;
+        Object o = car;
+//        o.moves();
+        System.out.println("Objects to String");
+        o.toString();
         movable.moves();
+        System.out.println("Vehicle toString");
+        v.toString();
         v.moves();
         System.out.println(car.toString());
     }
