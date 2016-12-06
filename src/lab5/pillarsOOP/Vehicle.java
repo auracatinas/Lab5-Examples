@@ -10,8 +10,13 @@ public class Vehicle {
         System.out.println("Vehicle moves");
     }
 
+    public void start() {
+        System.out.println("Vehicle starts!");
+    }
+
     public static void main(String[] args) {
         Car car = new Car();
+        car.start();
         car.moves();
     }
 }
@@ -21,5 +26,6 @@ class Car extends Vehicle {
     public void moves() {
         System.out.println("Car moves");
         super.moves();
+        super.start();
     }
 }
