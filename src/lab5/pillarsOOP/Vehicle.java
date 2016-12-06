@@ -4,15 +4,13 @@ package lab5.pillarsOOP;
  * @author flo
  * @since 06/12/2016.
  */
-public class Vehicle {
+public abstract class Vehicle {
     private int id;
     public void moves() {
         System.out.println("Vehicle moves");
     }
 
-    public final void start() {
-        System.out.println("Vehicle starts!");
-    }
+    public abstract void start();
 
     public static void main(String[] args) {
         Car car = new Car();
@@ -24,9 +22,9 @@ public class Vehicle {
 class Car extends Vehicle {
     @Override
     public void moves() {
+        start();
         System.out.println("Car moves");
         super.moves();
-        super.start();
     }
 
     @Override
